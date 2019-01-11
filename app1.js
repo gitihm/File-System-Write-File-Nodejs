@@ -1,3 +1,4 @@
 var fs = require('fs');
-var read = fs.readFileSync('code.txt','utf8');
-console.log(read);
+fs.mkdir('test',function(){
+    fs.writeFileSync('./test/readme.txt','hello guy!');
+});
